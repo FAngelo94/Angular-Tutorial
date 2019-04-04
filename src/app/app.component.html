@@ -16,6 +16,31 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
+    <li></li>
 </ul>
 
 <router-outlet></router-outlet>
+<h1>{{title}}</h1>
+<articolo [articolo]="myArticolo" (like)="mostraMessaggioRingraziamento($event)"></articolo>
+
+Inserisci un numero:
+<input type="number" [(ngModel)]="numeroB" />
+<div>
+	Il doppio di {{numeroB}} &egrave; {{numeroB * 2}}
+</div>
+
+<div [ngSwitch]="myArticolo.titolo">
+	<div *ngSwitchCase="'Ciao'">
+		<button>Ciao</button>
+	</div>
+	<div *ngSwitchCase="'Wei'">
+		<button>Wei</button>
+	</div>
+	<div *ngSwitchDefault>
+		<button>Saluto Generico</button>
+	</div>
+</div>
+<articolo-form (confirm)="confirmData()"></articolo-form>
+<br/>
+<h1>Reactive</h1>
+<articolo-form-reactive></articolo-form-reactive>
