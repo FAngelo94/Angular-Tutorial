@@ -7,14 +7,17 @@ import { AppComponent } from './app.component';
 import { ArticoloComponent } from './articolo/articolo.component';
 import { ArticoloFormComponent } from './articolo-form/articolo-form.component';
 import { ArticoloFormReactiveComponent } from './articolo-form-reactive/articolo-form-reactive.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
+import { TruncatePipe } from './articolo-form-reactive/truncate';
+import { ArticoliService } from './articoli.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticoloComponent,
     ArticoloFormComponent,
-    ArticoloFormReactiveComponent
+    ArticoloFormReactiveComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ArticoliService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

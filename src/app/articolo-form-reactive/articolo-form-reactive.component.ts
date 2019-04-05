@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { Articolo} from '../articolo/articolo';
+
 @Component({
   selector: 'articolo-form-reactive',// Selector used in html where this component is imported
   templateUrl: './articolo-form-reactive.component.html',

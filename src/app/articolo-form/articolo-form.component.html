@@ -16,6 +16,6 @@
   </div>
   <button type="button" (click)="confirmData()">Invia</button>
 </form>
-titolo: {{model.titolo}}<br/>
+titolo: {{model.titolo | truncate: 10}}<br/>
 autore: {{model.autore}}<br/>
 testo: {{model.testo}}<br/>
