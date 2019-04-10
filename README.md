@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
@@ -26,7 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# Angular-Tutorial
-Simple website in Angular done for testing
->>>>>>> eeb3d0fb3dd4aeb67271cea30a5fd83b997d191b
+
+## Angular route tutorial
+
+To understand rooting do this tutorial: https://appdividend.com/2018/12/14/angular-7-routing-and-sub-routing-tutorial-with-example/
+
